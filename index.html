@@ -1,28 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Marisa Project</title>
+    <title>Overview | Airline Performance Project</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin: 40px;
-            background: #f7f7f7;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            max-width: 700px;
+            background: #f4f4f4;
+            color: #222;
             line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: #003366;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation */
+        .nav {
+            background: #00509e;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+        }
+
+        .container h2 {
+            margin-top: 0;
+            color: #003366;
+            font-size: 26px;
+        }
+
+        /* Sources box */
+        .sources-box {
+            background: #eef4ff;
+            border-left: 5px solid #003366;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 6px;
+        }
+
+        .sources-box h3 {
+            margin-top: 0;
+            color: #003366;
+        }
+
+        .sources-box ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #003366;
+            color: white;
+            margin-top: 40px;
         }
     </style>
 </head>
+
 <body>
 
-<h1>Welcome to My Project Website</h1>
+    <!-- Header -->
+    <div class="header">
+        <h1>U.S. Airline Performance Comparison</h1>
+    </div>
 
-<p>This is my custom-coded website for my school project. No templates, no builders — just HTML and CSS.</p>
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="index.html">Overview</a>
+        <a href="#">Analysis</a>
+        <a href="#">Conclusion</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Overview</h2>
+
+        <p>
+            This project analyzes the operational and customer experience performance of the three largest U.S. carriers:
+            <strong>American Airlines (AA)</strong>, <strong>Delta Air Lines (DL)</strong>, and <strong>United Airlines (UA)</strong>.
+            Using real quarterly financial data, BTS operational metrics, and customer satisfaction benchmarks, this
+            website highlights how each airline performs across cost structure, reliability, and customer perception.
+        </p>
+
+        <p>
+            As someone who works inside airline operations, I wanted this project to feel grounded in reality—not just
+            numbers on a page. The aviation industry is complex, fast‑moving, and deeply interconnected. A single delay
+            can ripple across the network. A shift in fuel prices can reshape an entire quarter. Customer satisfaction is
+            influenced by everything from staffing to weather to aircraft routing.
+        </p>
+
+        <p>
+            This Overview page introduces the dataset and the purpose of the project. The Analysis and Conclusion pages
+            will walk through the findings and explain what the differences between AA, DL, and UA mean in practice.
+        </p>
+
+        <!-- Sources -->
+        <div class="sources-box">
+            <h3>Data Sources</h3>
+            <ul>
+                <li>Air Travel Consumer Reports (2025) — transportation.gov</li>
+                <li>Nasdaq — 2025 Financial Statements</li>
+                <li>BTS TranStats — Passenger Loads</li>
+                <li>BTS On‑Time Performance Database</li>
+                <li>J.D. Power — 2025 Airline Satisfaction Study</li>
+                <li>Freddie Awards — 2025 Loyalty Rankings</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2026 Marisa — Data Analytics Project
+    </div>
 
 </body>
 </html>
+
