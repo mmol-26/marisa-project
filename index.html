@@ -3,190 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <title>Overview | Airline Performance Project</title>
+
     <style>
-/* GLOBAL */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #1a1a1a; /* charcoal */
-    color: #ffffff; /* white text */
-    line-height: 1.6;
-}
+        /* GLOBAL */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a; /* charcoal */
+            color: #ffffff;
+            line-height: 1.6;
+        }
 
-/* HEADER */
-.header {
-    background: #000000; /* deep black */
-    color: #ffffff;
-    padding: 30px;
-    text-align: center;
-    border-bottom: 3px solid #cc0000; /* red accent */
-}
+        /* HEADER */
+        .header {
+            background: #000000;
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 3px solid #cc0000;
+        }
 
-.header h1 {
-    margin: 0;
-    font-size: 34px;
-    letter-spacing: 1px;
-}
+        .header h1 {
+            margin: 0;
+            font-size: 34px;
+            letter-spacing: 1px;
+        }
 
-/* NAVIGATION */
-.nav {
-    background: #262626; /* dark gray */
-    padding: 14px;
-    text-align: center;
-    border-bottom: 2px solid #cc0000;
-}
+        /* NAVIGATION */
+        .nav {
+            background: #262626;
+            padding: 14px;
+            text-align: center;
+            border-bottom: 2px solid #cc0000;
+        }
 
-.nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
 
-.nav a:hover {
-    color: #cc0000; /* red hover */
-}
+        .nav a:hover {
+            color: #cc0000;
+        }
 
-/* MAIN CONTENT BOX */
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #2b2b2b; /* slightly lighter charcoal */
-    padding: 35px;
-    border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.4);
-}
+        /* MAIN CONTENT BOX */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            background: #2b2b2b;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.4);
+        }
 
-.container h2 {
-    margin-top: 0;
-    color: #cc0000; /* red section title */
-    font-size: 28px;
-}
+        .container h2 {
+            margin-top: 0;
+            color: #cc0000;
+            font-size: 28px;
+        }
 
-/* LINKS */
-a {
-    color: #ff4d4d; /* bright red links */
-}
+        /* TWO-COLUMN LAYOUT */
+        .overview-layout {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
 
-a:hover {
-    color: #ff9999;
-}
+        .overview-text {
+            flex: 2;
+        }
 
-/* SOURCES BOX */
-.sources-box {
-    background: #1f1f1f;
-    border-left: 5px solid #cc0000;
-    padding: 20px;
-    margin-top: 35px;
-    border-radius: 6px;
-}
+        .overview-image {
+            flex: 1;
+        }
 
-.sources-box h3 {
-    margin-top: 0;
-    color: #cc0000;
-}
+        .overview-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.5);
+        }
 
-.sources-box ul {
-    padding-left: 20px;
-}
+        /* SOURCES BOX */
+        .sources-box {
+            background: #1f1f1f;
+            border-left: 5px solid #cc0000;
+            padding: 20px;
+            margin-top: 35px;
+            border-radius: 6px;
+        }
 
-/* FOOTER */
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: #000000;
-    color: #ffffff;
-    margin-top: 50px;
-    border-top: 3px solid #cc0000;
-}
-.overview-layout {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-}
+        .sources-box h3 {
+            margin-top: 0;
+            color: #cc0000;
+        }
 
-.overview-text {
-    flex: 2;
-}
+        .sources-box a {
+            color: #ff4d4d;
+        }
 
-.overview-image {
-    flex: 1;
-}
+        .sources-box a:hover {
+            color: #ff9999;
+        }
 
-.overview-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.5);
-}
-
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #000000;
+            color: #ffffff;
+            margin-top: 50px;
+            border-top: 3px solid #cc0000;
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- HEADER -->
     <div class="header">
         <h1>U.S. Airline Performance Comparison</h1>
     </div>
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
     <div class="nav">
         <a href="index.html">Overview</a>
         <a href="#">Analysis</a>
         <a href="#">Conclusion</a>
     </div>
-<h2>Overview</h2>
-    <!-- Main Content -->
-    <div class="container">
-        <div class="overview-layout">
-    <div class="overview-text">
-        <!-- Your existing overview paragraphs stay here -->
-    </div>
 
-    <div class="overview-image">
-        <img src="17e98ce3-a981-4de8-b5a1-b0be33b53f92.jpg" alt="Airline photo">
-    </div>
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h2>Overview</h2>
+
+        <div class="overview-layout">
+
+            <!-- LEFT SIDE TEXT -->
+            <div class="overview-text">
+                <p>
+American Airlines is the largest airline in the world, operating the biggest fleet and serving more destinations than any other U.S. carrier. 
+                    Yet despite its size, American consistently earns less profit than it's competitors, Delta and United. 
+                    This project explores why that gap exists.
+
+
+                </p>
+                    <p>
+Using data from the Bureau of Transportation Statistics, consumer ratings, and each airline’s 2025 financial statements, 
+                        this analysis compares several key areas: on‑time performance, quarterly financial results, customer satisfaction scores, and overall passenger volume throughout 2025. 
+                        Together, these metrics reveal how operational reliability, cost structure, and public perception contribute to American’s profitability challenges 
+                        — and why Delta and United continue to outperform the world’s largest airline.
+                </p>
+            </div>
+
+            <!-- RIGHT SIDE IMAGE -->
+            <div class="overview-image">
+                <img src="17e98ce3-a981-4de8-b5a1-b0be33b53f92.jpg" alt="Airline photo">
+            </div>
+
         </div>
 
-        <p>
-            This project analyzes the operational and customer experience performance of the three largest U.S. carriers:
-            <strong>American Airlines (AA)</strong>, <strong>Delta Air Lines (DL)</strong>, and <strong>United Airlines (UA)</strong>.
-            Using real quarterly financial data, BTS operational metrics, and customer satisfaction benchmarks, this
-            website highlights how each airline performs across cost structure, reliability, and customer perception.
-        </p>
+        <!-- SOURCES -->
+        <div class="sources-box">
+            <h3>Data Sources</h3>
+            <ul>
+                <li><a href="https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2025" target="_blank">Air Travel Consumer Reports (2025)</a></li>
+                <li><a href="https://www.nasdaq.com" target="_blank">Nasdaq — 2025 Financial Statements</a></li>
+                <li><a href="https://www.transtats.bts.gov/Data_Elements.aspx" target="_blank">BTS TranStats — Passenger Loads</a></li>
+                <li><a href="https://www.transtats.bts.gov/ontime/Airline.aspx" target="_blank">BTS On‑Time Performance Database</a></li>
+                <li><a href="https://www.jdpower.com/business/press-releases/2025-north-america-airline-satisfaction-study" target="_blank">J.D. Power — 2025 Airline Satisfaction Study</a></li>
+                <li><a href="https://freddieawards.com/winners-circle" target="_blank">Freddie Awards — 2025 Loyalty Rankings</a></li>
+            </ul>
+        </div>
 
-        <p>
-            As someone who works inside airline operations, I wanted this project to feel grounded in reality—not just
-            numbers on a page. The aviation industry is complex, fast‑moving, and deeply interconnected. A single delay
-            can ripple across the network. A shift in fuel prices can reshape an entire quarter. Customer satisfaction is
-            influenced by everything from staffing to weather to aircraft routing.
-        </p>
+    </div>
 
-        <p>
-            This Overview page introduces the dataset and the purpose of the project. The Analysis and Conclusion pages
-            will walk through the findings and explain what the differences between AA, DL, and UA mean in practice.
-        </p>
-
-        <!-- Sources -->
-<div class="sources-box">
-    <h3>Data Sources</h3>
-    <ul>
-        <li><a href="https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2025" target="_blank">Air Travel Consumer Reports (2025)</a></li>
-        <li><a href="https://www.nasdaq.com" target="_blank">Nasdaq — 2025 Financial Statements</a></li>
-        <li><a href="https://www.transtats.bts.gov/Data_Elements.aspx" target="_blank">BTS TranStats — Passenger Loads</a></li>
-        <li><a href="https://www.transtats.bts.gov/ontime/Airline.aspx" target="_blank">BTS On‑Time Performance Database</a></li>
-        <li><a href="https://www.jdpower.com/business/press-releases/2025-north-america-airline-satisfaction-study" target="_blank">J.D. Power — 2025 Airline Satisfaction Study</a></li>
-        <li><a href="https://freddieawards.com/winners-circle" target="_blank">Freddie Awards — 2025 Loyalty Rankings</a></li>
-    </ul>
-</div>
-
-
-    <!-- Footer -->
+    <!-- FOOTER -->
     <div class="footer">
-        © 2026 Marisa L. Molina — Data Analytics Project
+        © 2026 M.L. Molina — Data Analytics Project
     </div>
 
 </body>
 </html>
-
