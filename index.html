@@ -9,7 +9,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #1a1a1a; /* charcoal */
+            background: #1a1a1a;
             color: #ffffff;
             line-height: 1.6;
         }
@@ -59,31 +59,24 @@
             box-shadow: 0 0 12px rgba(0,0,0,0.4);
         }
 
-        .container h2 {
-            margin-top: 0;
-            color: #cc0000;
-            font-size: 28px;
+        /* IMAGE ON RIGHT AT TOP */
+        .overview-image-top {
+            text-align: right;
+            margin-bottom: 25px;
         }
 
-        /* TWO-COLUMN LAYOUT */
-        .overview-layout {
-            display: flex;
-            gap: 30px;
-            align-items: flex-start;
-        }
-
-        .overview-text {
-            flex: 2;
-        }
-
-        .overview-image {
-            flex: 1;
-        }
-
-        .overview-image img {
-            width: 100%;
+        .overview-image-top img {
+            width: 40%;
             border-radius: 10px;
             box-shadow: 0 0 12px rgba(0,0,0,0.5);
+        }
+
+        /* H2 BELOW IMAGE */
+        h2 {
+            color: #cc0000;
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 20px;
         }
 
         /* SOURCES BOX */
@@ -136,12 +129,16 @@
 
     <!-- MAIN CONTENT -->
     <div class="container">
+
+        <!-- IMAGE FIRST (RIGHT SIDE) -->
+        <div class="overview-image-top">
+            <img src="17e98ce3-a981-4de8-b5a1-b0be33b53f92.jpg" alt="Airline photo">
+        </div>
+
+        <!-- H2 BELOW IMAGE -->
         <h2>Overview</h2>
 
-        <div class="overview-layout">
-
-            <!-- LEFT SIDE TEXT -->
-            <div class="overview-text">
+        <!-- PARAGRAPHS BELOW -->
                 <p>
 American Airlines is the largest airline in the world, operating the biggest fleet and serving more destinations than any other U.S. carrier. 
                     Yet despite its size, American consistently earns less profit than it's competitors, Delta and United. 
@@ -156,13 +153,6 @@ Using data from the Bureau of Transportation Statistics, consumer ratings, and e
                         — and why Delta and United continue to outperform the world’s largest airline.
                 </p>
             </div>
-
-            <!-- RIGHT SIDE IMAGE -->
-            <div class="overview-image">
-                <img src="17e98ce3-a981-4de8-b5a1-b0be33b53f92.jpg" alt="Airline photo">
-            </div>
-
-        </div>
 
         <!-- SOURCES -->
         <div class="sources-box">
