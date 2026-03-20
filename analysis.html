@@ -91,12 +91,17 @@
     flex: 0 0 60%;   /* chart column */
     text-align: center;
 }
-
-.graphic {
-    border: 0.5px solid #ffffff;
+.chart-img {
+    border: 0.5px solid #ffffff; /* keep border */
     border-radius: 4px;
     width: 100%;
-    display: block;
+    max-width: 600px;
+}
+
+.table-img {
+    border: none; /* remove border */
+    width: 100%;
+    max-width: 300px; /* keeps table smaller */
 }
     </style>
 </head>
@@ -146,11 +151,11 @@
         <h4 id="q1">How does each airline compare in on-time departures?</h4>
 <div class="q-row">
     <div class="q-left">
-        <img src="d0_table.jpg" class="graphic">
+        <img src="d0_table.jpg" class="table-img">
     </div>
 
     <div class="q-right">
-        <img src="d0_chart.jpg" class="graphic">
+        <img src="d0_chart.jpg" class="chart-img">
     </div>
 </div>
       <p>In Q1 2025, American Airlines averaged a departure delay of 14.15 minutes across 227,500 flights. Delta performed slightly better with an average delay of 11.51 minutes over 232,126 flights, while United led the group with the lowest delay of 8.78 minutes across 186,629 departures. These figures reflect operational efficiency during the winter months, with United showing strong performance in minimizing departure delays.
