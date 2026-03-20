@@ -75,17 +75,20 @@
             border-top: 3px solid #cc0000;
         }
 .q-row {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-    gap: 20px !important;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
     margin: 20px 0;
 }
 
-.q-col {
-    flex: 1 1 50% !important;
+.q-left {
+    flex: 0 0 30%;   /* table column */
+    text-align: center;
+}
+
+.q-right {
+    flex: 0 0 60%;   /* chart column */
     text-align: center;
 }
 
@@ -93,7 +96,7 @@
     border: 0.5px solid #ffffff;
     border-radius: 4px;
     width: 100%;
-    max-width: 600px;
+    display: block;
 }
     </style>
 </head>
