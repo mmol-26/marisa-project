@@ -74,16 +74,18 @@
             margin-top: 50px;
             border-top: 3px solid #cc0000;
         }
-.q1-row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;              /* space between the two images */
+.q-row {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    width: 100%;
     margin: 20px 0;
 }
 
-.q1-col {
-    flex: 1;
+.q-col {
+    flex: 1 1 50% !important;
     text-align: center;
 }
 
@@ -91,11 +93,8 @@
     border: 0.5px solid #ffffff;
     border-radius: 4px;
     width: 100%;
-    max-width: 600px;       /* keeps them equal size */
-    display: block;
-    margin: 0 auto;
+    max-width: 600px;
 }
-
     </style>
 </head>
 
